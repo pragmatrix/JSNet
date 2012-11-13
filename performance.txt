@@ -1,0 +1,38 @@
+JavaScript Parser Performance
+
+Files, Milliseconds
+
+			support for empty function bodies, removed files where implicit
+			semicolon insertion is required
+44	155267
+			reordered keyword detection:
+			"this" had a higher prio than Identifier
+			"new" had a higher prio than Identifier
+			"function" had a higher prio than Identifier
+
+81	159906
+			fixed a "function" -> Identifier conflict
+83	149945	
+			relaxed parsing of Decimals (allow 000 for example to be valid)
+84  152088
+----------  milestone reached: all files except auto-semicolon insertion and
+			regular expressions can be parseed
+----------  simplification of core algorithm
+84	148619
+			avoid emptying processing stack if FailAllRules cannot be resolved
+			for a production.
+84	150305 
+			Implemented cache for left recursion states.
+84	138534	
+			Reenabled a Conditional("TRACE").
+84	17916		
+			Simple tests for FailAllRules
+84	17761	
+			Used state stack instead of processing command stack
+84  14787
+			Minor optimization on nullable values.
+84  14177
+			Don't push stuff on the processing stack if it is not required.
+84	13704
+			Replaced direct left recursions by any (*)
+84  12525

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSNet", "JSNet\JSNet.csproj", "{863AC604-5436-47E4-B7C5-9CFCC80DAC49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSRun", "JSRun\JSRun.csproj", "{02A3A17C-62C8-48DA-A60A-C1DDE7D86E22}"
+	ProjectSection(ProjectDependencies) = postProject
+		{863AC604-5436-47E4-B7C5-9CFCC80DAC49} = {863AC604-5436-47E4-B7C5-9CFCC80DAC49}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{863AC604-5436-47E4-B7C5-9CFCC80DAC49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863AC604-5436-47E4-B7C5-9CFCC80DAC49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863AC604-5436-47E4-B7C5-9CFCC80DAC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863AC604-5436-47E4-B7C5-9CFCC80DAC49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A3A17C-62C8-48DA-A60A-C1DDE7D86E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A3A17C-62C8-48DA-A60A-C1DDE7D86E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A3A17C-62C8-48DA-A60A-C1DDE7D86E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A3A17C-62C8-48DA-A60A-C1DDE7D86E22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
